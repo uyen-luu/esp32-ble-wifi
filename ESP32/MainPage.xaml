@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESP32.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Button Text="Scan &amp; Connect to ESP32" Clicked="OnScanBluetoothClicked"/>
+            <Button Text="Scan for Wi-Fi" Clicked="OnScanWifiClicked"/>
+            <Entry x:Name="wifiSsid" Placeholder="Wi-Fi SSID"/>
+            <Entry x:Name="wifiPassword" Placeholder="Wi-Fi Password" IsPassword="True"/>
+            <Button Text="Connect to Wi-Fi" Clicked="OnConnectWifiClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
